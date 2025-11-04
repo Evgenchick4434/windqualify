@@ -1,0 +1,4 @@
+pyTelegramBotAPI
+requests
+bs4
+beautifulsoup4
