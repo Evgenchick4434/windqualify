@@ -1,4 +1,5 @@
-pyTelegramBotAPI
+aiogram
 requests
 bs4
-beautifulsoup4
+cerebras-cloud-sdk
+groq
